@@ -103,6 +103,8 @@ bronze_config = {
 ```
 **Objetivo**: Evitar falhas na leitura, ignorar arquivos corrompidos e otimizar escrita e compactação automática.
 
+---
+
 **Silver** Limpeza e Padronização dos Dados
 ```bash
 silver_config = {
@@ -116,7 +118,10 @@ silver_config = {
 }
 ```
 **Objetivo**: Melhorar o desempenho de joins e atualizações com Delta.
+
 **Benefícios**: Otimização de escrita, joins eficientes e uso de broadcast quando viável.
+
+---
 
 **Gold** (Camada Analítica)
 
@@ -133,6 +138,7 @@ gold_config = {
 }
 ```
 **Objetivo**: Ganho de performance com Adaptive Query Execution (AQE) em joins pesados.
+
 **Benefícios**: Performance aprimorada em workloads analíticos com dados skewed (desequilibrados).
 
 Essas configurações são aplicadas dinamicamente em cada notebook ao iniciar a SparkSession, garantindo que cada etapa esteja otimizada para sua função dentro da arquitetura Lakehouse.
