@@ -6,9 +6,9 @@ Este projeto implementa uma arquitetura moderna de dados (Lakehouse) no Databric
 
 ## Estrutura das Camadas
 
-- **🔹 Bronze**: Ingestão de dados brutos a partir de arquivos CSV.
-- **⚪ Silver**: Limpeza, deduplicação e padronização de dados.
-- **🟡 Gold**: Agregações e modelo analítico final (curated).
+- **Bronze**: Ingestão de dados brutos a partir de arquivos CSV.
+- **Silver**: Limpeza, deduplicação e padronização de dados.
+- **Gold**: Agregações e modelo analítico final (curated).
 
 ---
 
@@ -22,7 +22,7 @@ Este projeto implementa uma arquitetura moderna de dados (Lakehouse) no Databric
 
 ---
 
-## 📂 Estrutura de Pastas
+## Estrutura de Pastas
 ```lua
 ├── databricks_notebook
 │   ├── bronze.ipynb
